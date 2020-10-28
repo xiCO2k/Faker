@@ -16,6 +16,9 @@ jobs:
           php-version: 7.4
           coverage: none
 
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Find branch alias
         id: find_alias
         run: |
