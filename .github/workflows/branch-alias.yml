@@ -27,7 +27,7 @@ jobs:
 
       - name: Update branch alias
         run: |
-          CURRENT_ALIAS=$(composer config extra.branch-alias.dev-master | cut -d'-' -f 1)
+          CURRENT_ALIAS=$(composer config extra.branch-alias.dev-main | cut -d'-' -f 1)
 
           # If there is a current value on the branch alias
           if [ ! -z $CURRENT_ALIAS ]; then
@@ -46,7 +46,7 @@ jobs:
             fi
           fi
 
-          composer config extra.branch-alias.dev-master ${{ steps.find_alias.outputs.alias }}-dev
+          composer config extra.branch-alias.dev-main ${{ steps.find_alias.outputs.alias }}-dev
 
       - name: Commit & push the new files
         run: |
