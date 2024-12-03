@@ -37,6 +37,14 @@ use Faker\Container\ContainerInterface;
  *
  * @method string address()
  *
+ * @property string $secondaryAddress
+ *
+ * @method string secondaryAddress()
+ *
+ * @property string $state
+ *
+ * @method string state()
+ *
  * @property string $country
  *
  * @method string country()
@@ -176,6 +184,10 @@ use Faker\Container\ContainerInterface;
  * @property string $jobTitle
  *
  * @method string jobTitle()
+ *
+ * @property string $ein
+ *
+ * @method string ein()
  *
  * @property int $unixTime
  *
